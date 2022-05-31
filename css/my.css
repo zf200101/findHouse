@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.login{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.login>img{
+    width: 100%;
+    /* float: left; */
+}
+.login>div{
+position: absolute;
+width: 2.8rem;
+height: 2.8rem;
+/* background-color: aqua; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: .9rem;
+}
+.login>div:nth-of-type(1){
+    right: 5.5rem;
+    top: 1rem;
+}
+
+.login>div:nth-of-type(1)>p:nth-of-type(1){
+    width: 1.6rem;
+    height: 2rem;
+    background: url(../imags/urse.png) no-repeat;
+    background-size: contain;
+}
+
+.login>div:nth-of-type(2){
+    right: 2rem;
+    top: 1rem;
+}
+
+.login>div:nth-of-type(2)>p:nth-of-type(1){
+    width: 1.6rem;
+    height: 2rem;
+    background: url(../imags/down.png) no-repeat;
+    background-size: contain;
+}
+
+.deng{
+    position: absolute;
+    width: 5rem;
+    height: 8rem;
+    /* background-color: aqua; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    display: flex;
+    flex-direction: column;
+}
+
+.deng>span:nth-of-type(1){
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    background: url(../imags/urse2.png) no-repeat;
+    background-size: contain;
+}
+
+.deng>span:nth-of-type(2){
+    margin-top: .3rem;
+    padding: .5rem .8rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: white;
+}
+
+
+.login_ul1{
+    width: 100%;
+    list-style: none;
+    margin-top: .5rem;
+    background-color: #FFFFFF;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.login_ul1>li{
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    
+    
+    font-size: .9rem;
+    color: #474747;
+}
+.login_ul1>li:nth-of-type(1)>span:nth-of-type(1){
+    width:5%;
+    height: 30%;
+    /* background-color: aqua; */
+    background: url(../imags/icon1.png) no-repeat;
+    background-size: contain;
+    margin-top: .1rem;
+    margin-right: .2rem;
+}
+.login_ul1>li>span:nth-of-type(2){
+    width: 85% ;
+}
+
+.login_ul1>li>span:nth-of-type(3){
+    width:5%;
+    height: 30%;
+    background: url(../imags/right.png) no-repeat;
+    background-size: contain;
+     
+}
+.login_ul1>li:nth-of-type(2)>span:nth-of-type(1){
+    width:5%;
+    height: 30%;
+    /* background-color: aqua; */
+    background: url(../imags/icon2.png) no-repeat;
+    background-size: contain;
+    margin-top: .1rem;
+    margin-right: .2rem;
+}
+.login_ul1>li:nth-of-type(3)>span:nth-of-type(1){
+    width:5%;
+    height: 30%;
+    /* background-color: aqua; */
+    background: url(../imags/icon3.png) no-repeat;
+    background-size: contain;
+    margin-top: .1rem;
+    margin-right: .2rem;
+}
+.login_ul1>li:nth-of-type(4)>span:nth-of-type(1){
+    width:5%;
+    height: 30%;
+    /* background-color: aqua; */
+    background: url(../imags/icon4.png) no-repeat;
+    background-size: contain;
+    margin-top: .1rem;
+    margin-right: .2rem;
+   
+}

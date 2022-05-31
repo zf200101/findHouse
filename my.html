@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/my.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <img src="./imags/bg1.png" alt="">
+        <div>
+            <p></p>
+            <p>我的</p>
+        </div>
+        <div>
+            <p></p>
+            <p>APP</p>
+        </div>
+
+        <p class="deng">
+            <span></span>
+            <span id="log_in">登录</span>
+        </p>
+    </div>
+
+
+    <ul class="login_ul1">
+        <li>
+            <span></span>
+            <span>我关注的房源</span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span>我关注的小区</span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span>我关注的新房</span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span>我的看房记录</span>
+            <span></span>
+        </li>
+    </ul>
+</body>
+
+</html>
+
+
+<script src="./js/my.js"></script>
+<script>
+    function setRem() {
+
+        var ui_w = 375;
+
+        // 获取屏幕的宽度
+
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+        console.log(ui_w, clientWidth);
+
+
+
+        // 通过js动态改变html根节点字体大小
+
+        var html_ = document.getElementsByTagName('html')[0];
+
+        html_.style.fontSize = (clientWidth / ui_w) * 10 + 'px';
+
+    }
+
+    // window.onresize 浏览器被重置大小执行事件
+
+    window.onresize = setRem;
+// window.onblur = setRem;
+</script>
