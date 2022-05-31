@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/rentaiList.css">
+    
+</head>
+<body>
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <!-- --------------------------------- -->
+    <div id="shouye">
+        <span>首页</span>  >  北京租房
+    </div>
+    <!-- ------------------------------ -->
+    <div id="inp">
+        <input type="text">
+        <div><img src="./imags/search_03.png" alt=""></div>
+    </div>
+    <!-- ------------------------------------ -->
+    <div id="address">
+        <div id="address_one">
+            区域
+            <span id="span_one"></span>
+        </div>
+        <div id="address_two">
+            月租
+        </div>
+        <div id="address_thr">
+            房型
+        </div>
+        <div id="address_four">
+            更多
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+
+</script>
+<script src="./js/rentaiList.js"></script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+</head>
+<body>
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <!-- -------------------------------------------------------- -->
+    <div id="foot">
+        <div id="foot_one">
+            北京找房无忧>首页
+        </div>
+        <div id="foot_two">
+            <div class="footer">
+                <img src="./imags/apple.png" alt="">
+                <p>iPhone
+                    <br>
+                    客户端</p>
+            </div>
+            <div class="footer">
+                <img src="./imags/android.png" alt="">
+                <p>Android
+                    <br>
+                    客户端</p>
+            </div>
+        </div>
+        <div id="foot_thr">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+
+</script>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/SecondHandList.css">
+</head>
+<body>
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <!-- ---------------------------------- -->
+    <div id="inp">
+        <input type="text" placeholder="请输入小区名或商圈名称">
+        <div id="posi">
+            <img src="./imags/search_03.png" alt="">
+        </div>
+    </div>
+    <!-- ------------------------------------ -->
+    <div id="mush">
+        <div class="mush_one">
+            <select name="" id="">
+                <option value="">区域</option>
+                <option value="">北京</option>
+                <option value="">上海</option>
+            </select>
+        </div>
+        <div class="mush_one">
+            <select name="" id="">
+                <option value="">价格</option>
+                <option value="">100000元/平</option>
+                <option value="">99999元/平</option>
+            </select>
+        </div>
+        <div class="mush_one">
+            <select name="" id="">
+                <option value="">房型</option>
+                <option value="">复式</option>
+                <option value="">公寓</option>
+            </select>
+        </div>
+        <div class="mush_one">
+            <select name="" id="">
+                <option value="">更多</option>
+                <option value="">别墅</option>
+                <option value="">连排</option>
+            </select>
+        </div>
+    </div>
+    <!-- ------------------------------------ -->
+    <div id="many_house">
+        <div class="house_one">
+            <div class="house_pic">
+                <img src="./imags/img1.jpg" alt="">
+            </div>
+            <div class="zi">
+                <p class="strong">西便门外大街2室1厅89平</p>
+                <p>南北 高楼层/6层</p>
+                <p class="gray">签约价格:13244元/平 <span class="orange">1105万</span> </p>
+                <p class="gray">签约日期:2015年11月10日</p>
+            </div>
+        </div>
+        <!-- ---------------------------- -->
+        <div class="house_one">
+            <div class="house_pic">
+                <img src="./imags/img2.png" alt="">
+            </div>
+            <div class="zi">
+                <p class="strong">金桥国际 1室1厅 63平</p>
+                <p>南北 高楼层/6层</p>
+                <p class="gray">签约价格:13244元/平  <span class="orange">1105万</span> </p>
+                <p class="gray">签约日期:2015年11月10日</p>
+            </div>
+        </div>
+        <!-- --------------------------------- -->
+        <div class="house_one">
+            <div class="house_pic">
+                <img src="./imags/img3.png" alt="">
+            </div>
+            <div class="zi">
+                <p class="strong">花涧溪二期 2室2厅 90平</p>
+                <p>南北 高楼层/6层</p>
+                <p class="gray">签约价格:13244元/平 <span class="orange">1105万</span> </p>
+                <p class="gray">签约日期:2015年11月10日</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------- -->
+    <div id="foot">
+        <div id="foot_one">
+            北京找房无忧>首页
+        </div>
+        <div id="foot_two">
+            <div class="footer">
+                <img src="./imags/apple.png" alt="">
+                <p>iPhone
+                    <br>
+                    客户端</p>
+            </div>
+            <div class="footer">
+                <img src="./imags/android.png" alt="">
+                <p>Android
+                    <br>
+                    客户端</p>
+            </div>
+        </div>
+        <div id="foot_thr">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+
+</script>
