@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/rentaiList.css">
+    
+</head>
+<body>
+    <div id="moban"></div>
+
+
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <!-- --------------------------------- -->
+    <div id="shouye">
+        <span>首页</span>  >  北京租房
+    </div>
+    <!-- ------------------------------ -->
+    <div id="inp">
+        <input type="text">
+        <div><img src="./imags/search_03.png" alt=""></div>
+    </div>
+    <!-- ------------------------------------ -->
+    <div id="address">
+        <div id="address_one">
+            区域
+            <span id="span_one"></span>
+        </div>
+        <div id="address_two">
+            月租
+            <span id="span_two"></span>
+        </div>
+        <div id="address_thr">
+            房型
+            <span id="span_thr"></span>
+        </div>
+        <div id="address_four">
+            更多
+            <span id="span_four"></span>
+        </div>
+    </div>
+    <!-- -------------------------------------- -->
+    <div id="hury">
+        <div class="hury_one">
+            <div class="hury_pic">
+                <img src="./imags/img3.png" alt="">
+            </div>
+            <div class="hury_zi">
+                <p class="strong">南沙滩小区 超低价急售</p>
+                <p>2室1厅 96㎡ 南北</p>
+                <p>青岛新天地</p>
+                <p><span class="green">集中供暖</span> <span class="orange">3700元/月</span></p>
+            
+            
+            </div>
+        </div>
+        <div class="hury_one">
+            <div class="hury_pic">
+                <img src="./imags/img4.png" alt="">
+            </div>
+            <div class="hury_zi">
+                <p class="strong">青年汇二期 免税三居</p>
+                <p>3室2厅 129㎡ 南北</p>
+                <p>青年汇家园</p>
+                <p><span class="green">集中供暖</span> <span class="orange">3700元/月</span></p>
+            
+            
+            </div>
+        </div>
+        <div class="hury_one">
+            <div class="hury_pic">
+                <img src="./imags/img5.png" alt="">
+            </div>
+            <div class="hury_zi">
+                <p class="strong">博雅德源稀缺两居 钥匙房源</p>
+                <p>2室1厅 96㎡ 南北</p>
+                <p>西二旗</p>
+                <p><span class="green">天然气供暖</span> <span class="orange">3700元/月</span></p>
+            
+            
+            </div>
+        </div>
+        <div class="hury_one">
+            <div class="hury_pic">
+                <img src="./imags/img6.png" alt="">
+            </div>
+            <div class="hury_zi">
+                <p class="strong">朝阳北路赠车库自住首选</p>
+                <p>5室3厅 260m² 南北</p>
+                <p>武夷花园二手房</p>
+                <p><span class="green">天然气供暖</span> <span class="orange">3700元/月</span></p>
+            
+            
+            </div>
+        </div>
+        <div class="hury_one">
+            <div class="hury_pic">
+                <img src="./imags/img7.png" alt="">
+            </div>
+            <div class="hury_zi">
+                <p class="strong">金汉旭城 东南金角一居</p>
+                <p>1室1厅 60m² 东南</p>
+                <p>鲁谷二手房</p>
+                <p><span class="green">天然气供暖</span> <span class="orange">3700元/月</span></p>
+            
+            
+            </div>
+        </div>
+    </div>
+
+    <div id="foot">
+        <div id="foot_one">
+            北京找房无忧>首页
+        </div>
+        <div id="foot_two">
+            <div class="footer">
+                <img src="./imags/apple.png" alt="">
+                <p>iPhone
+                    <br>
+                    客户端</p>
+            </div>
+            <div class="footer">
+                <img src="./imags/android.png" alt="">
+                <p>Android
+                    <br>
+                    客户端</p>
+            </div>
+        </div>
+        <div id="foot_thr">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+
+</script>
+<script src="./js/rentaiList.js"></script>

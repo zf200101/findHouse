@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/rentailDateils.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <!-- ------------------------------------ -->
+    <div id="shouye">
+        <span>首页</span>  >  北京租房  >  房源信息
+    </div>
+    <!-- -------------------------------------- -->
+    <!-- ---------------轮播图-------------------- -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <img src="./imags/img3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imags/img4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imags/img5.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imags/img6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imags/img7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imags/img2.png" alt="">
+            </div>
+
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+       
+    
+    </div>
+    <!-- ----------------------------------------- -->
+    <div id="fly">
+        <div id="fly_one">
+            天鹅湾小区精装两居，满五唯一，业主换房急售
+        </div>
+        <div id="fly_two">
+            <img src="./imags/xin.png" alt="">
+            <p>关注</p>
+        </div>
+    </div>
+    <!-- --------------------------------------- -->
+    <div id="money">
+        <div id="money_one">
+            <p>租金</p>
+            <p class="orange">2300元/月</p>
+        </div>
+        <div id="money_two">
+            <p>房型</p>
+            <p class="orange">2室1厅</p>
+        </div>
+        <div id="money_thr">
+            <p>面积</p>
+            <p class="orange">204平米</p>
+        </div>
+    </div>
+    <!-- --------------------------------------- -->
+    <div id="build">
+        <div class="build_one">
+            <div class="left_one">
+                楼层：高楼/17层
+            </div>
+            <div class="left_one">
+                朝向：南北
+            </div>
+        </div>
+        <div class="build_one">
+            <div class="left_one">
+                装修：精装
+            </div>
+            <div class="left_one">
+                供暖：集体供暖
+            </div>
+        </div>
+        <div class="build_one">
+            <div class="left_one">
+                年代：2007年
+            </div>
+            <div class="left_one">
+                楼型：板楼
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------- -->
+    <div id="man">
+        <div id="man_one">
+            <div class="man_people">
+                经纪人房评<span><img src="./imags/right.png" alt=""></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+    var mySwiper = new Swiper ('.swiper', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    autoplay:true,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+    },
+      // 如果需要前进后退按钮
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+  })        
+</script>
+
