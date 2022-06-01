@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <div id="my">
+        <strong>首页</strong>> 我的 > 注册
+    </div>
+    <div id="please">
+        <input type="text" placeholder="请输入手机号码" id="inp_one"><button id="btn">发送验证码</button>
+    </div>
+    <div id="again">
+        <input type="text" placeholder="请输入短信中的验证码" id="inp_two">
+
+    </div>
+    <div id="password">
+        <input type="text" placeholder="请输入新密码" id="inp_thr">
+    </div>
+    <div id="login">
+        <button id="btn_login">立即注册</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+    var btn=document.getElementById('btn');
+    btn.onclick=function(){
+        
+        var num=60;
+        var timer= setInterval(function(){
+            num--;
+            btn.innerHTML=num;
+            if(num==55){
+                alert('9527');
+                btn.innerHTML='再次获得验证码'
+               clearInterval(timer)
+            }
+        },1000)
+    }
+
+    var inp_one=document.getElementById('inp_one');
+    var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
+    inp_one.onmouseleave=function(){
+        if(inp_one.value==''){
+            alert('手机号码不能为空')
+        }else if(myreg.test(inp_one.value)==true){
+            alert('输入正确')
+        }else{
+            alert('请正确输入手机号码')
+        }
+    }
+
+    var inp_two=document.getElementById('inp_two');
+    inp_two.onmouseleave=function(){
+        if(inp_two.value==''){
+            alert('验证码不能为空')
+        }else if(inp_two.value!=9527){
+            alert('验证码错误')
+        }else{
+            alert('验证码正确')
+        }
+    }
+
+    var pass=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
+    var inp_thr=document.getElementById('inp_thr');
+    inp_thr.onmouseleave=function(){
+        if(inp_thr.value==''){
+            alert('密码不能为空')
+        }else if(pass.test(inp_thr.value)!=true){
+            alert('密码带非法字符或者至少包含 数字和英文，长度6-20')
+        }else{
+            alert('设置密码成功')
+        }
+    }
+
+    var btn_login=document.getElementById('btn_login');
+    btn_login.onclick=function(){
+        if(myreg.test(inp_one.value)==true&&inp_two.value==9527&&pass.test(inp_thr.value)==true){
+            window.location.href='./login.html'
+        }
+       
+    }
+
+
+
+
+
+</script>
