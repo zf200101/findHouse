@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.login_p1{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #474747;
+}
+.login_p2{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.login_p2>span{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    text-align: center;
+    line-height: 3.5rem;
+    border-bottom: .3rem solid #ccc;
+}
+
+.login_p2>.botstyle{
+    border-bottom: .3rem solid #FF8A00;
+}
+
+.login_denglu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login_zhang>p{
+    width: 100%;
+    height: 3.5rem;
+    border-bottom: 1px solid #ccc;
+    padding:0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.login_zhang>p>input{
+    width: 100%;
+    height: 70%;
+    border: none;
+    outline: none;
+}
