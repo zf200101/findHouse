@@ -1,16 +1,23 @@
 
 var zhang=document.getElementById('zhang');
+var login_zhang =document.getElementsByClassName('login_zhang')[0];
 // console.log(zhang);
 zhang.className = 'botstyle';
+login_zhang.style.display = 'block'
 var duan=document.getElementById('duan');
+var  login_duan =document.getElementsByClassName('login_duan')[0];
 
 zhang.ontouchstart =function(){
     zhang.className = 'botstyle'
     duan.className = 'none'
+    login_zhang.style.display = 'block'
+    login_duan.style.display = 'none'
 }
 duan.ontouchstart =function(){
     duan.className = 'botstyle'
     zhang.className = 'none'
+    login_zhang.style.display = 'none'
+    login_duan.style.display = 'block'
 }
 // 手机验证
 var  sjyz=document.getElementById('sjyz');
@@ -27,9 +34,3 @@ sjyz.onblur = function(){
         alert('手机号不能为空');
     }
 }
-
-var pass = document.getElementById('pass');
-// console.log(pass);
-var pass_a = /^[a-z0-9]{6,8}$/i;
-
-// if()
