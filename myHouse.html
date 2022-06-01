@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./css/myHouse.css">
+ </head>
+ <body>
+    <div id="top">
+        <div id="top_one">
+            <img src="./imags/logo.jpg" alt="">
+        </div>
+        <div id="top_two">
+            <img src="./imags/my.jpg" alt="">
+        </div>
+        <div id="top_the">
+            <img src="./imags/xiazai.jpg" alt="">
+        </div>
+    </div>
+    <!-- ------------------------------------- -->
+    <div id="my">
+        <strong>首页</strong>> 我的 > 我关注的小区
+    </div>
+    <!-- ------------------------------------- -->
+    <div id="my_house">
+        <div class="my_one">
+            <div class="pic">
+                <img src="./imags/img3.png" alt="">
+            </div>
+            <div class="zi">
+                <p><strong>辉煌国际</strong></p>
+                <p>昌平区-回龙观</p>
+                <p>2007年建成 <span>37050元/平</span> </p>
+                <p>板塔结构</p>
+            </div>
+        </div>
+        <div class="my_one">
+            <div class="pic">
+                <img src="./imags/img5.png" alt="">
+            </div>
+            <div class="zi">
+                <p><strong>万寿园</strong></p>
+                <p>昌平区-回龙观</p>
+                <p>2007年建成 <span>37050元/平</span> </p>
+                <p>板塔结构</p>
+            </div>
+        </div>
+        <div class="my_one">
+            <div class="pic">
+                <img src="./imags/img6.png" alt="">
+            </div>
+            <div class="zi">
+                <p><strong>红莲南里5号</strong></p>
+                <p>昌平区-回龙观</p>
+                <p>2007年建成 <span>37050元/平</span> </p>
+                <p>板塔结构</p>
+            </div>
+        </div>
+        <div class="my_one">
+            <div class="pic">
+                <img src="./imags/img7.png" alt="">
+            </div>
+            <div class="zi">
+                <p><strong>万寿西街16号</strong></p>
+                <p>昌平区-回龙观</p>
+                <p>2007年建成 <span>37050元/平</span> </p>
+                <p>板塔结构</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="foot">
+        <div id="foot_one">
+            北京找房无忧>首页
+        </div>
+        <div id="foot_two">
+            <div class="footer">
+                <img src="./imags/apple.png" alt="">
+                <p>iPhone
+                    <br>
+                    客户端</p>
+            </div>
+            <div class="footer">
+                <img src="./imags/android.png" alt="">
+                <p>Android
+                    <br>
+                    客户端</p>
+            </div>
+        </div>
+        <div id="foot_thr">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+ </body>
+ </html>
+
+ <script>
+    function setRem(){
+        var a=document.documentElement.clientWidth || document.body.clientWidth;
+
+        var b=375;
+
+        var html=document.getElementsByTagName('html')[0];
+
+        html.style.fontSize=(a/b)*2+'px';
+
+    }
+    window.onresize=setRem();
+
+
+</script>
